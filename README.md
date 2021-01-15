@@ -1,0 +1,2 @@
+# thefqnew
+YENI DÜZEN!
