@@ -1,0 +1,33 @@
+const Discord = require('discord.js');
+
+exports.run = function(client, message) {
+const embed = new Discord.MessageEmbed()
+.setColor('RANDOM')
+.setTitle('» !rqyz Moderasyon Menüsü')
+.setTimestamp()
+.addField('ᴪ r!forceban', 'Etiketlediğiniz kullanıcıyı sunucudan banlar.')
+.addField('ᴪ r!kick', 'Etiketlediğiniz kullanıcıyı sunucudan atar.')
+.addField('ᴪ r!temizle','İstediğiniz kadar mesaj silebilir.')
+.addField('ᴪ r!yetkilerim','Yetkilerinize kolaylıkla bakabilirsiniz.')
+.addField('ᴪ r!say','Kişi sayısını gösterir.')
+.addField('ᴪ r!yavaş-mod','Yavaş modu açar (0/10).')
+.addField('ᴪ r!rolver','Etiketlediğiniz kullanıcıya istediğiniz rolu verir. ')
+.setFooter('© 2020 *efq Bot', client.user.avatarURL())
+.setTimestamp()
+.setThumbnail(client.user.avatarURL())
+message.channel.send(embed)
+};
+
+exports.conf = {
+  enabled: true,
+  guildOnly: false, 
+  aliases: [], 
+  permLevel: 0 
+};
+
+
+exports.help = {
+  name: 'moderasyon',
+  description: 'Tüm komutları gösterir.',
+  usage: 'moderasyon'
+};
