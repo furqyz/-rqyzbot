@@ -254,13 +254,13 @@ client.on("guildMemberRemove", async member => {
 });
 ////sa-as
 client.on('message', async (msg, member, guild) => {
-  let i = await  db.fetch(`saas_${msg.guild.id}`)
-      if(i === 'açık') {
-        if (msg.content.toLowerCase() === 'sa') {
-        msg.reply('Aleyküm Selam Hoş Geldin Kanka');     
-      } 
-      }
-    });
+      let i = await  db.fetch(`saas_${msg.guild.id}`)
+          if(i === 'açık') {
+            if (msg.content.toLowerCase() === 'sa') {
+            msg.reply('Aleyküm Selam Hoş Geldin Kanka');     
+          } 
+          }
+        });
     client.on('message', async (msg, member, guild) => {
       let i = await  db.fetch(`saas_${msg.guild.id}`)
           if(i === 'açık') {
