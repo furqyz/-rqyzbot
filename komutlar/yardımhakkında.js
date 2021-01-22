@@ -3,8 +3,11 @@ const Discord = require('discord.js');
 exports.run = function(client, message) {
 const embed = new Discord.MessageEmbed()
 .setColor('RANDOM')
-.setTitle('» !rqyz Hakkında Menüsü')
+.setTitle('» !rqyz Bot Menüsü')
 .setTimestamp()
+.addField('ᴪ r!hata', 'Bot hakkında hata bildirirsiniz.')
+.addField('ᴪ r!öneri', 'Bot hakkında öneri bildirirsiniz.')
+.addField('ᴪ r!istek', 'Bot hakkında istek bildirirsiniz.')
 .addField('ᴪ r!istatistik','Botun istatistiğini gösterir.')
 .addField('ᴪ r!biyografi', 'Neden ben?')
 .addField('ᴪ r!davet','Davet linklerini gösterebilirim.')
@@ -17,7 +20,7 @@ message.channel.send(embed)
 exports.conf = {
   enabled: true,
   guildOnly: false, 
-  aliases: [], 
+  aliases: ['bot'], 
   permLevel: 0 
 };
 
