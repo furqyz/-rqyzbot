@@ -121,64 +121,7 @@ client.on('error', e => {
 client.login(ayarlar.token);
 
 ////////YAZI YAZINCA CEVAP VERME/////////
-client.on("message", msg => {
-    if (msg.content.toLowerCase() === "sa") {
-      msg.reply("Aleyküm selam, hoş geldin kanka");
-    }
-  });
-  client.on("message", msg => {
-    if (msg.content.toLowerCase() === "selamun aleyküm") {
-      msg.reply("Aleyküm selam, hoş geldin kanka");
-    }
-  });
-  client.on("message", msg => {
-    if (msg.content.toLowerCase() === "günaydın") {
-      msg.reply("Günaydın kanka iyi bir gün geçirmen dileğiyle..");
-    }
-  });
-  client.on("message", msg => {
-    if (msg.content.toLowerCase() === "ağla") {
-      msg.reply("Sana burdan bir çakarım ağlayı görürsün");
-    }  
-  });
-  client.on("message", msg => {
-    if (msg.content.toLowerCase() === "ne yapabilirsin") {
-      msg.reply("Aklına gelebilecek her şeyi yapma kapasitem var.  r!yardım yazarak neler yapabildiğime bakabilirsin. Eğer önerin var ise yapımcıma söyleyebilirsin.                                İletişim: instagram; @furqyz");
-    }
-  });
-client.on("message", msg => {
-    if (msg.content.toLowerCase() === "!ip") {
-      msg.reply("Sunucu IP: 185.171.25.39");
-    }
-  });
-client.on("message", msg => {
-    if (msg.content.toLowerCase() === "ip") {
-      msg.reply("Sunucu IP: 185.171.25.39");
-    }
-  });
-client.on("message", msg => {
-    if (msg.content.toLowerCase() === "IP") {
-      msg.reply("Sunucu IP: 185.171.25.39");
-    }
-  });
-  client.on("message", msg => {
-    if (msg.content.toLowerCase() === "iyi geceler") {
-      msg.reply("iyi geceler, tatlı rüyalar kanka..");
-    }
-  });
-client.on("message", msg => {
-    if (msg.content.toLowerCase() === "bb") {
-      msg.reply("Görüşürüz, kendine iyi bak <3");
-    }
-  });
-  ///hg bot
-  client.on("guildCreate", guild => {
-    let kanal = guild.channels.filter(c => c.type === "text").random();
-  
-    kanal.send(
-      "Merhaba, Beni Sunucunuza Eklediğiniz İçin Cok Minnettarım. Size En İyi Şekilde Hizmet Edeceğim."
-    )
-  });
+
 //OTOTAG SİSTEMİ\\
 client.on("guildMemberAdd", async member => {
     let judgedev = await db.fetch(`judgeteam?Ototag_${member.guild.id}`) 
