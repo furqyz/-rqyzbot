@@ -252,3 +252,36 @@ client.on("guildMemberRemove", async member => {
       }\` kişi!`
 );
 });
+////sa-as
+client.on('message', async (msg, member, guild) => {
+  let i = await  db.fetch(`saas_${msg.guild.id}`)
+      if(i === 'açık') {
+        if (msg.content.toLowerCase() === 'sa') {
+        msg.reply('Aleyküm Selam Hoş Geldin Kanka');     
+      } 
+      }
+    });
+    client.on('message', async (msg, member, guild) => {
+      let i = await  db.fetch(`saas_${msg.guild.id}`)
+          if(i === 'açık') {
+            if (msg.content.toLowerCase() === 'selam') {
+            msg.reply('Aleyküm Selam Hoş Geldin Kanka');     
+          } 
+          }
+        });
+        client.on('message', async (msg, member, guild) => {
+          let i = await  db.fetch(`saas_${msg.guild.id}`)
+              if(i === 'açık') {
+                if (msg.content.toLowerCase() === 'selamun aleyküm') {
+                msg.reply('Aleyküm Selam Hoş Geldin Kanka');     
+              } 
+              }
+            });
+            client.on('message', async (msg, member, guild) => {
+              let i = await  db.fetch(`saas_${msg.guild.id}`)
+                  if(i === 'açık') {
+                    if (msg.content.toLowerCase() === 'selamın aleyküm') {
+                    msg.reply('Aleyküm Selam Hoş Geldin Kanka');     
+                  } 
+                  }
+                });
