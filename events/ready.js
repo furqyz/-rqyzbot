@@ -16,9 +16,9 @@ module.exports = client => {
   );
   client.user.setStatus("online");
   var oyun = [
-    "Gelişmiş komut sistemi",
+    "Gelişmiş Komut Sistemi",
     "r!yardım",
-    "Beta @2020 efq"
+    "@10.12.2020"
 
   ];
 
