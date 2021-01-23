@@ -16,6 +16,7 @@ exports.run = (client, message, args) => {
 
   if (!message.guild.member(user).kickable) return message.reply('Yetkilileri sunucudan atamam.');
   message.guild.member(user).kick();
+  return message.reply(`\`${user}\` Sunucudan Kicklendi!`);
 
 };
 
