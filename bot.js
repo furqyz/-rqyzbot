@@ -228,3 +228,163 @@ client.on('message', async (msg, member, guild) => {
                   } 
                   }
                 });
+ /////küfür
+                client.on("message", async msg => {
+                  const i = await db.fetch(`${msg.guild.id}.kufur`);
+                  if (i) {
+                    const kufur = [
+                      "oç",
+                      "OÇ",
+                      "AMK",
+                      "AQ",
+                      "mq",
+                      "puşt",
+                      "pic",
+                      "amq",
+                      "annen",
+                      "sikmek",
+                      "göt",
+                      "am",
+                      "porn",
+                      "porno",
+                      "sex",
+                      "amk",
+                      "ananı sikiyim",
+                      "ananıskm",
+                      "piç",
+                      "amk",
+                      "amsk",
+                      "sikim",
+                      "sikiyim",
+                      "orospu çocuğu",
+                      "piç kurusu",
+                      "kahpe",
+                      "orospu",
+                      "mal",
+                      "sik",
+                      "yarrak",
+                      "am",
+                      "amcık",
+                      "amık",
+                      "yarram",
+                      "sikimi ye",
+                      "mk",
+                      "mq",
+                      "aq",
+                      "ak",
+                      "amq"
+                    ];
+                    if (kufur.some(word => msg.content.includes(word))) {
+                      try {
+                        if (!msg.member.hasPermission("BAN_MEMBERS")) {
+                          msg.delete();
+                
+                          const kinda = new Discord.MessageEmbed()
+                
+                            .setDescription("Bu Sunucuda Küfür Edemezsin.")
+                            .setColor("BLACK");
+                
+                          return msg.reply(kinda);
+                        }
+                      } catch (err) {
+                        console.log(err);
+                      }
+                    }
+                  }
+                  if (!i) return;
+                });
+                client.on("messageUpdate", msg => {
+                  const i = db.fetch(`${msg.guild.id}.kufur`);
+                  if (i) {
+                    const kufur = [
+                      "oç",
+                      "OÇ",
+                      "AMK",
+                      "AQ",
+                      "mq",
+                      "puşt",
+                      "pic",
+                      "amq",
+                      "annen",
+                      "sikmek",
+                      "göt",
+                      "am",
+                      "porn",
+                      "porno",
+                      "sex",
+                      "amk",
+                      "ananı sikiyim",
+                      "ananıskm",
+                      "piç",
+                      "amk",
+                      "amsk",
+                      "sikim",
+                      "sikiyim",
+                      "orospu çocuğu",
+                      "piç kurusu",
+                      "kahpe",
+                      "orospu",
+                      "mal",
+                      "sik",
+                      "yarrak",
+                      "am",
+                      "amcık",
+                      "amık",
+                      "yarram",
+                      "sikimi ye",
+                      "mk",
+                      "mq",
+                      "aq",
+                      "ak",
+                      "amq"
+                    ];
+                    if (kufur.some(word => msg.content.includes(word))) {
+                      try {
+                        if (!msg.member.hasPermission("BAN_MEMBERS")) {
+                          msg.delete();
+                          
+                
+                          const kinda = new Discord.MessageEmbed()
+                            .setDescription("Bu Sunucuda Küfür Edemezsin.")
+                            .setColor("BLACK");
+                
+                          return msg.reply(kinda);
+                        }
+                      } catch (err) {
+                        console.log(err);
+                      }
+                    }
+                  }
+                  if (!i) return;
+                });
+               ///reklamengel
+               client.on('message', async message => {
+                let aktif = await db.fetch(`reklamEngelcodeshare_${message.channel.id}`)
+                if (!aktif) return 
+                let reklamlar = ["discord.app", "discord.gg" ,"discordapp","discordgg", ".com", ".net", ".xyz", ".tk", ".pw", ".io", ".me", ".gg", "www.", "https", "http", ".gl", ".org", ".com.tr", ".biz", ".party", ".rf.gd", ".az", ".cf", ".me", ".in"]
+                let kelimeler = message.content.slice(" ").split(/ +/g)
+                if (reklamlar.some(word => message.content.toLowerCase().includes(word))) {
+                if (message.member.hasPermission("BAN_MEMBERS")) return;
+                message.delete()
+                message.reply('Reklamları engelliyorum!')
+                }
+                });
+                
+                client.on("messageUpdate", async (oldMsg, newMsg) => {
+                let aktif = await db.fetch(`reklamEngelcodeshare_${oldMsg.channel.id}`)
+                if(!aktif) return
+                let reklamlar = ["discord.app", "discord.gg","discordapp","discordgg", ".com", ".net", ".xyz", ".tk", ".pw", ".io", ".me", ".gg", "www.", "https", "http", ".gl", ".org", ".com.tr", ".biz", ".party", ".rf.gd", ".az", ".cf", ".me", ".in"]
+                let kelimeler = newMsg.content.slice(" ").split(/ +/g)
+                if (reklamlar.some(word => newMsg.content.toLowerCase().includes(word))) {
+                if (newMsg.member.hasPermission("BAN_MEMBERS")) return;
+                newMsg.delete()
+                oldMsg.reply('Reklamları engelliyorum!')
+                }
+                });
+                
+   ///prefix
+   client.on('message', message => {
+    if (message.content === `<@${client.user.id}>`) {
+     message.reply(`PREFIX: **r!**`)
+    }
+    });
