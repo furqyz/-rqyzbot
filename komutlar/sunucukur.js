@@ -36,15 +36,15 @@ role.setPermissions(['MANAGE_GUILD', 'MANAGE_ROLES', 'MANAGE_NICKNAMES', 'MANAGE
 role.setColor('#ff4000  ');
 });
 message.guild.roles.create({ data: { name: '・Kayıt Sorumlusu' }, reason: 'ayn' }).then(s => s.setColor('#2efef7'))
-message.guild.roles.create({ data: { name: '・Vip' }, reason: 'ayn' }).then(s => s.setColor('#f4fa58'))
+message.guild.roles.create({ data: { name: '・V!P' }, reason: 'ayn' }).then(s => s.setColor('#f4fa58'))
 message.guild.roles.create({ data: { name: '♀・KIZ' }, reason: 'ayn' }).then(s => s.setColor('#955aab'))
 message.guild.roles.create({ data: { name: '♂・ERKEK' }, reason: 'ayn' }).then(s => s.setColor('#2e9afe'))
 message.guild.roles.create({ data: { name: '・Üye' }, reason: 'ayn' }).then(s => s.setColor('#00ff40'))
-message.guild.roles.create({ data: { name: '・Botlar' }, reason: 'ayn' }).then(s => s.setColor('#e77e2e'))
+message.guild.roles.create({ data: { name: '・BOT' }, reason: 'ayn' }).then(s => s.setColor('#e77e2e'))
 message.guild.roles.create({ data: { name: '・・・・・・・・' }, reason: 'ayn' }).then(s => s.setColor('#ffffff'))
 message.guild.roles.create({ data: { name: '🎤・Sesi Güzel' }, reason: 'ayn' }).then(s => s.setColor('#955aab'))
 message.guild.roles.create({ data: { name: '🤯・ŞAKAMATİK' }, reason: 'ayn' }).then(s => s.setColor('#ffff00'))
-message.guild.roles.create({ data: { name: '🕋 ・Elhamdülillah' }, reason: 'ayn' }).then(s => s.setColor('#58fa58'))
+message.guild.roles.create({ data: { name: '🕋 ・İmanlı' }, reason: 'ayn' }).then(s => s.setColor('#58fa58'))
 message.guild.roles.create({ data: { name: '🍽️・Doymuyor' }, reason: 'ayn' }).then(s => s.setColor('#2e9afe'))
 message.guild.roles.create({ data: { name: '🍌・Gececi' }, reason: 'ayn' }).then(s => s.setColor('#8000ff'))
 message.guild.roles.create({ data: { name: '・・・・・・・・' }, reason: 'ayn' }).then(s => s.setColor('#ffffff'))
