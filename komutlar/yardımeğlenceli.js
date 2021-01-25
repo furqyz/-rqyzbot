@@ -9,6 +9,8 @@ const embed = new Discord.MessageEmbed()
 .addField('ᴪ r!oyunlar', 'Oyun menüsünü açarsınız.')
 .addField('ᴪ r!gif', 'Gif menüsünü açarsınız.')
 .addField('ᴪ r!logo', 'Logo menüsünü açarsınız.')
+.addField('ᴪ r!diğer', 'Bağımsız değişkenler.')
+
 .setFooter('© 2020 @!rqyz', client.user.avatarURL())
 .setTimestamp()
 .setThumbnail(client.user.avatarURL())
