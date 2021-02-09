@@ -7,7 +7,6 @@ const embed = new Discord.MessageEmbed()
 .setTimestamp()
 .addField('ᴪ r!hata', 'Bot hakkında hata bildirirsiniz.')
 .addField('ᴪ r!öneri', 'Bot hakkında öneri bildirirsiniz.')
-.addField('ᴪ r!istek', 'Bot hakkında istek bildirirsiniz.')
 .addField('ᴪ r!istatistik','Botun istatistiğini gösterir.')
 .addField('ᴪ r!davet','Davet linklerini gösterebilirim.')
 .setFooter('© 2020 @!rqyz', client.user.avatarURL())
@@ -24,7 +23,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'hakkında',
+  name: 'bot',
   description: 'Benim hakkımda her şeyi öğrenebilirsin.',
-  usage: 'hakkında'
+  usage: 'bot'
 };
