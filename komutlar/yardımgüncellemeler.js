@@ -9,6 +9,7 @@ const exampleEmbed = new Discord.MessageEmbed()
  .setColor("RANDOM")
  .setDescription(`
  **SON BAKIM ÇALIŞMASI**
+ **📌・AVATAR:** r!avatar yazarak avatarlara göz atabilirsiniz.
  **📌・Steam Sistemi:** r!steam yazarak oyunların fiyatlarına bakabilirsiniz.
  **📌・Play Store Sistemi:** r!playstore yazarak oyunların fiyatlarına bakabilirsiniz.
  **📌・Türk Dil Kurumu Sistemi:** r!tdk yazarak kelimelerin anlamlarına bakabilirsiniz.
