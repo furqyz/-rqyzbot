@@ -8,7 +8,7 @@ let user = message.mentions.users.first() || message.author
 const exampleEmbed = new Discord.MessageEmbed()
  .setColor("RANDOM")
  .setDescription(`
- **10.02.2021**
+ **SON BAKIM ÇALIŞMASI**
  **📌・Steam Sistemi:** r!steam yazarak oyunların fiyatlarına bakabilirsiniz.
  **📌・Play Store Sistemi:** r!playstore yazarak oyunların fiyatlarına bakabilirsiniz.
  **📌・Türk Dil Kurumu Sistemi:** r!tdk yazarak kelimelerin anlamlarına bakabilirsiniz.
