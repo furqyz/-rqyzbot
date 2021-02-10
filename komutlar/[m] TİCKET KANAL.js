@@ -25,7 +25,7 @@ exports.conf = {
  enabled: true,
  guildOnly: false,
  aliases: ["ticket-kanal"],
- permLevel: 3
+ permLevel: 0
 }
 exports.help = {
  name: 'ticket-ayarla',
