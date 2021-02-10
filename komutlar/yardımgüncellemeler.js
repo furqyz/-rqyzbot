@@ -9,6 +9,8 @@ const exampleEmbed = new Discord.MessageEmbed()
  .setColor("RANDOM")
  .setDescription(`
  **SON BAKIM ÇALIŞMASI**
+ **📌・TOPLAM KOMUT:** r!toplamkomut yazarak toplam komut sayısını görebilirsiniz.
+ **📌・PREFİX:** r!prefix yazarak bota istediğiniz prefixi atabailirsiniz.
  **📌・AVATAR:** r!avatar yazarak avatarlara göz atabilirsiniz.
  **📌・Steam Sistemi:** r!steam yazarak oyunların fiyatlarına bakabilirsiniz.
  **📌・Play Store Sistemi:** r!playstore yazarak oyunların fiyatlarına bakabilirsiniz.
