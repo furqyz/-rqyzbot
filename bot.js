@@ -244,7 +244,6 @@ client.on('message', async (msg, member, guild) => {
                       "annen",
                       "sikmek",
                       "göt",
-                      "am",
                       "porn",
                       "porno",
                       "sex",
@@ -263,7 +262,6 @@ client.on('message', async (msg, member, guild) => {
                       "mal",
                       "sik",
                       "yarrak",
-                      "am",
                       "amcık",
                       "amık",
                       "yarram",
@@ -271,7 +269,6 @@ client.on('message', async (msg, member, guild) => {
                       "mk",
                       "mq",
                       "aq",
-                      "ak",
                       "amq"
                     ];
                     if (kufur.some(word => msg.content.includes(word))) {
@@ -308,7 +305,6 @@ client.on('message', async (msg, member, guild) => {
                       "annen",
                       "sikmek",
                       "göt",
-                      "am",
                       "porn",
                       "porno",
                       "sex",
@@ -327,15 +323,12 @@ client.on('message', async (msg, member, guild) => {
                       "mal",
                       "sik",
                       "yarrak",
-                      "am",
                       "amcık",
                       "amık",
                       "yarram",
                       "sikimi ye",
-                      "mk",
                       "mq",
                       "aq",
-                      "ak",
                       "amq"
                     ];
                     if (kufur.some(word => msg.content.includes(word))) {
@@ -383,8 +376,38 @@ client.on('message', async (msg, member, guild) => {
                 });
                 
    ///prefix
-   client.on('message', message => {
-    if (message.content === `<@${client.user.id}>`) {
-     message.reply(`PREFIX: **r!**`)
-    }
-    });
+  client.on("message", async message => {
+
+    if (message.author.bot) return;
+  
+    if (!message.guild) return;
+  
+    let prefix = db.fetch(`prefix_${message.guild.id}`);
+  
+    if (prefix === null) prefix = prefix;
+  
+    if (!message.content.startsWith(prefix)) return;
+  
+    if (!message.member)
+  
+    message.member = await message.guild.fetchMember(message);
+  
+    const args = message.content
+  
+      .slice(prefix.length)
+  
+      .trim()
+  
+      .split(/ +/g);
+  
+    const cmd = args.shift().toLowerCase();
+  
+    if (cmd.length === 0) return;
+    
+    let command = client.commands.get(cmd);
+  
+    if (!command) command = client.commands.get(client.aliases.get(cmd));
+  
+    if (command) command.run(client, message, args);
+  
+  });
