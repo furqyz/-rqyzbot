@@ -11,7 +11,6 @@ const exampleEmbed = new Discord.MessageEmbed()
  **SON BAKIM ÇALIŞMASI**
  **📌・DÖVİZ:** r!döviz yazarak döviz kurunu görebilirsiniz.
  **📌・BİTCOİN:** r!bitcoin yazarak bitcoin son durumunu görebilirsiniz.
- **📌・DÜZELLO:** r!düello yazarak düello atabilirsiniz.
  **📌・ANİME ARA:** r!animeara yazarak anime aratabilirsiniz.
  **📌・ROL BİLGİ:** r!rolbilgi yazarak rol hakkına bilgi alabilirsiniz.
  **📌・TOPLAM KOMUT:** r!toplamkomut yazarak toplam komut sayısını görebilirsiniz.
