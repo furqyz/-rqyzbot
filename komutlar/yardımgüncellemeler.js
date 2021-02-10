@@ -9,20 +9,15 @@ const exampleEmbed = new Discord.MessageEmbed()
  .setColor("RANDOM")
  .setDescription(`
  **SON BAKIM ÇALIŞMASI**
+ **📌・DÖVİZ:** r!döviz yazarak döviz kurunu görebilirsiniz.
+ **📌・BİTCOİN:** r!bitcoin yazarak bitcoin son durumunu görebilirsiniz.
+ **📌・DÜZELLO:** r!düello yazarak düello atabilirsiniz.
+ **📌・ANİME ARA:** r!animeara yazarak anime aratabilirsiniz.
+ **📌・ROL BİLGİ:** r!rolbilgi yazarak rol hakkına bilgi alabilirsiniz.
  **📌・TOPLAM KOMUT:** r!toplamkomut yazarak toplam komut sayısını görebilirsiniz.
  **📌・PREFİX:** r!prefix yazarak bota istediğiniz prefixi atabailirsiniz.
  **📌・AVATAR:** r!avatar yazarak avatarlara göz atabilirsiniz.
- **📌・Steam Sistemi:** r!steam yazarak oyunların fiyatlarına bakabilirsiniz.
- **📌・Play Store Sistemi:** r!playstore yazarak oyunların fiyatlarına bakabilirsiniz.
- **📌・Türk Dil Kurumu Sistemi:** r!tdk yazarak kelimelerin anlamlarına bakabilirsiniz.
- **📌・CS:GO KASA:** r!csgokasa yazarak kasa açabilirsiniz.
- **📌・KAÇ CM:** r!kaçcm yazarak neyse anladınız siz :D
- **📌・KATEGORİLİ FİLM ÖNERİSİ:** r!film-öner yazarak bir sürü öneri alabilirsiniz.
- **📌・TİCKET SİSTEMİ:** r!ticket-kanal yazarak kanalı oluşturabilirsiniz.
- **📌・TİCKET SİSTEMİ:** r!ticket yazarak ayarlanan kanala ticket gönderebilirsiniz.
- **📌・HAZIR KURALLAR:** r!kurallar yazarak hazır kuralları görebilirsiniz.
  **📌・+18 GÖRSELLER:** r!pgif yazarak +18 görsellere ulaşabilirsiniz.
-
 `)
 
   message.channel.send(exampleEmbed)
