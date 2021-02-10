@@ -6,7 +6,7 @@ exports.run = async(client, message, args) => {
 const embed = new Discord.MessageEmbed()
 .setColor('#00ff00')
 message.delete()
-message.reply('\n<a:zil:798637076445659157> **Şikayet** yazınız başarıyla bildirildi. \nEn Yakın Zamanda Cevap Vereceğiz. \`**KIRAATHANE GAMING**\`')
+message.reply('\n<a:zil:798637076445659157> **Şikayet** yazınız başarıyla bildirildi.<a:zil:798637076445659157>\n\`**KIRAATHANE GAMING**\`')
 const embed2 = new Discord.MessageEmbed()
 .setColor("#ff0009")
 .setDescription(`**${message.author.tag}** adlı kullanıcının **Şikayeti ;**`)
