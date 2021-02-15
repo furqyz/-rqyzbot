@@ -9,14 +9,7 @@ const exampleEmbed = new Discord.MessageEmbed()
  .setColor("RANDOM")
  .setDescription(`
  **SON BAKIM ÇALIŞMASI**
- **📌・DÖVİZ:** r!döviz yazarak döviz kurunu görebilirsiniz.
- **📌・BİTCOİN:** r!bitcoin yazarak bitcoin son durumunu görebilirsiniz.
- **📌・ANİME ARA:** r!animeara yazarak anime aratabilirsiniz.
- **📌・ROL BİLGİ:** r!rolbilgi yazarak rol hakkına bilgi alabilirsiniz.
- **📌・TOPLAM KOMUT:** r!toplamkomut yazarak toplam komut sayısını görebilirsiniz.
- **📌・PREFİX:** r!prefix yazarak bota istediğiniz prefixi atabailirsiniz.
- **📌・AVATAR:** r!avatar yazarak avatarlara göz atabilirsiniz.
- **📌・+18 GÖRSELLER:** r!pgif yazarak +18 görsellere ulaşabilirsiniz.
+ **📌・EVERYONE HERE ENGEL:** r!everyengel Everyone & Here yasaklarsınız.
 `)
 
   message.channel.send(exampleEmbed)
