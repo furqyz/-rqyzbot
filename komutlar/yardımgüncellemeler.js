@@ -10,6 +10,7 @@ const exampleEmbed = new Discord.MessageEmbed()
  .setDescription(`
  **SON BAKIM ÇALIŞMASI**
  **📌・EVERYONE HERE ENGEL:** r!everyengel Everyone & Here yasaklarsınız.
+**📌・1 HAFTA İÇERİSİNDE YEPYENİ KOMUTLAR EKLENECEKTİR! PİNG SORUNU DA DÜZELTİLECEKTİR!**
 `)
 
   message.channel.send(exampleEmbed)
